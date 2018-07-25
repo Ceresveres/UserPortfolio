@@ -106,7 +106,7 @@ body {
 
 
 /*
- * Footer
+ * Footer   
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
@@ -129,4 +129,8 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
+}
+
+.app-nav span {
+  margin-right: 1rem;
 }
