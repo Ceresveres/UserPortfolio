@@ -23,30 +23,21 @@
       <div class="row">
 
         <div class="col-md-9 blog-main">
-          <h3 class="font-italic">
-            From the Firehose
-          </h3>
-          <p class="border-bottom">
-            <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-          </p>
+          
+          <%= render 'shared/blog_subtitle' %>
+
           <%= yield %>
+
         </div>
 
         <%= render 'shared/blog_sidebar' %>
         
       </div>
 
-        <footer class="blog-footer">
-          <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-          <p>
-            <a href="#">Back to top</a>
-          </p>
-        </footer>
+        <%= render 'shared/blog_footer' %>
 
         <%= source_helper("blog") %>
-
-      
+    
     </main>
-
   </body>
 </html>
