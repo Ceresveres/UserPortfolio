@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "gritter";
 
 /*
  * Globals
@@ -145,7 +146,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('home_screen.jpg') no-repeat;
+  background: image-url('home_screen.png') no-repeat;
   background-size: cover;
 }
 
