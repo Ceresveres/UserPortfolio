@@ -10,8 +10,6 @@ end
 gem 'rails', '~> 5.1.6'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
-gem "loofah", ">= 2.2.3"
-gem "rack", ">= 2.0.6"
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
