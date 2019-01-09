@@ -60,6 +60,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: .875rem;
 }
 
+.card {
+  padding-top: 10px; 
+  padding-bottom: 10px
+}
+
 .card-img-right {
   height: 100%;
   border-radius: 0 3px 3px 0;
@@ -127,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
  * Footer
  */
 .blog-footer {
+  margin-top: 25px;
   padding: 2.5rem 0;
   color: #999;
   text-align: center;
@@ -143,4 +149,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-links {
   font-size: 1.5em;
+}
+
+.comment-card > .card {
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.comment-timestamp {
+  font-size: .8em;
+  font-style: italic;
 }
