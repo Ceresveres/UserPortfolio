@@ -6,6 +6,6 @@
   <%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
 
   <p class="blog-post-meta">
-		<%= markdown blog.body %>
+		<%= markdown truncate(blog.body, length: 1000, separator: ' ') %>
   </p>
 </div>
