@@ -9,16 +9,18 @@
 
     <META name="keywords" content="<%= @seo_keywords %>" />
 
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
+
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <main role="main" class="container">
-      
-      <%= render 'shared/blog_header' %>
 
       <%= render 'shared/blog_nav' %>
+      
+      <%= render 'shared/blog_header' %>
         
       <div class="row">
         <%= yield %> 
