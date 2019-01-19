@@ -10,6 +10,21 @@
 			</div>
 			<div class="col-8">
 				<p class="">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own. Find me in app/views/pages/about.html.erb< Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own. Find me in app/views/pages/about.html.erb</p>
+				<div class="skills">
+					<% @skills.each do |skill| %>
+						<div class="skill">
+							<h5><%= skill.title %></h5>
+							<div class="progress">
+								<div class="progress-bar bg-success"
+											 role="progressbar"
+											 aria-valuenow="<%= skill.percent_utilized %>"
+											 aria-valuemax="100"
+											 style="width: <%= skill.percent_utilized %>%"
+								></div>
+							</div>
+						</div>
+					<% end %>
+				</div>
 			</div>
 		</div>
 	</div>
