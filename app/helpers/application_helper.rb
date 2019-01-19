@@ -17,7 +17,7 @@ module ApplicationHelper
 	end
 
   def copyright_generator
-    @copyright = SwannViewTool::Renderer.copyright 'Jasper Swann', 'All rights reserved'
+    @copyright = SwannViewTool::Renderer.copyright 'S. Tyler Wilson', 'All rights reserved'
   end
 
   def nav_items
