@@ -30,6 +30,7 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Muli', sans-serif;
 }
 
 body {
@@ -49,12 +50,17 @@ body {
   min-width: 45em;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Ovo', serif;
+}
+
 
 /*
  * Header
  */
 .masthead {
   margin-bottom: 2rem;
+
 }
 
 .masthead-brand {
