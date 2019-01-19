@@ -1,3 +1,22 @@
+User.create!(
+  email: "test@test.com",
+  password: "password",
+  password_confirmation: "password",
+  name: "Admin",
+  roles: "site_admin"
+ )
+
+puts "1 Admin User created"
+
+User.create!(
+  email: "testing@testing.com",
+  password: "password",
+  password_confirmation: "password",
+  name: "guest"
+)
+
+puts "1 Guest User Created"
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -14,7 +33,7 @@ puts "3 Topics created"
     ) 
 end
 
-puts "10 blog posts created"
+puts "10 Blog Posts created"
 
 5.times do |skill|
   Skill.create!(
@@ -23,7 +42,7 @@ puts "10 blog posts created"
   )
 end
 
-puts "5 skills created"
+puts "5 Skills created"
 
 8.times do |portfolio_item|
   Portfolio.create!(
@@ -45,7 +64,7 @@ end
   )
 end
 
-puts "9 portfolio items created"
+puts "9 Portfolio Items created"
 
 3.times do |technology| 
   Portfolio.last.technologies.create!(
