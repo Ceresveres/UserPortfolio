@@ -1,12 +1,16 @@
 <div class="col-md-9 blog-main">
-	<%= render 'shared/blog_subtitle' %>
+	<h2 class="font-italic border-bottom text-dark"><%= @blog.title %></h2>
 
-	<h2><%= @blog.title %></h2>
+	<nav class="breadcumb">
+		<%= link_to @blog.topic.title, topic_path(@blog.topic), class: 'breadcrumb-item text-muted' %>
 
-	<%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
+		 <span class="pull-right">
+		 		<%= render partial: 'blogs/admin_actions', locals: { blog: @blog } %>
+		 </span>
+	</nav>
 
 	<p>
-		<%= @blog.body %>
+		<%= markdown @blog.body %>
 	</p>
 
 	<%= render 'comments/comment_form' %>

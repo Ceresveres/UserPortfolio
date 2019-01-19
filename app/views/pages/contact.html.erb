@@ -1,7 +1,23 @@
-<h1>Pages#contact</h1>
+<div class="app-card-container">
+	<div class="card border-white">
+		<h1>Contact Page</h1>
 
-<p><%= number_to_phone "5555555555" %>< Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own./p>
+		<hr color="white">
 
-<p><a href="mailto:ceresveres@gmail.com?subject=PortfolioContact" "email me">Email me</a></p>
+		<div class="row">
+			<div class="col-6">
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1315.2954322406279!2d-122.46273671635855!3d48.75151174789302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485a39399f764e5%3A0x88102198fb46b535!2s1628+Lincoln+St%2C+Bellingham%2C+WA+98229!5e0!3m2!1sen!2sus!4v1532485625881" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<h2 class="card-title">Phone</h2>
+				<p><%= number_to_phone "5555555555" %></p>
+
+				<h2 class="card-title">Email</h2>
+				<a href="mailto:ceresveres@gmail.com?subject=PortfolioContact" "email me">ceresveres@gmail.com</a>
+			</div>
+			<div class="col-6">
+				<div class="embed-responsive embed-responsive-1by1">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1315.2954322406279!2d-122.46273671635855!3d48.75151174789302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485a39399f764e5%3A0x88102198fb46b535!2s1628+Lincoln+St%2C+Bellingham%2C+WA+98229!5e0!3m2!1sen!2sus!4v1532485625881" width="100%" class="embed-responsive-item" frameborder="0" style="border:0"allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

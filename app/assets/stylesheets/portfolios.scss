@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import "font-awesome";
 
 :root {
   --jumbotron-padding-y: 3rem;
@@ -12,6 +13,7 @@
   margin-bottom: 0;
   background-color: #fff;
 }
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: calc(var(--jumbotron-padding-y) * 2);
@@ -48,4 +50,20 @@ footer p {
 
 .portfolio-container {
   padding-top: 40px;
+}
+
+.social-links {
+  color: white;
+}
+
+.caption {
+  font-size: 1.5em;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-family: 'Ovo', serif, "Times New Roman", serif;
 }

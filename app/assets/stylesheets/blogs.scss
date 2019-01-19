@@ -6,13 +6,18 @@
 
 /* stylelint-disable selector-list-comma-newline-after */
 
+body {
+  font-family: 'Muli', sans-serif;
+}
+
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 3em;
 }
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: 'Ovo', serif;
   font-size: 2.25rem;
 }
 
@@ -21,7 +26,7 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: 'Ovo', serif, "Times New Roman", serif;
 }
 
 .display-4 {
@@ -58,6 +63,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: .875rem;
+  color: #343a40;
+}
+
+.nav .nav-link:hover {
+  color: #007bff;
 }
 
 .card {
@@ -160,4 +170,13 @@ h1, h2, h3, h4, h5, h6 {
 .comment-timestamp {
   font-size: .8em;
   font-style: italic;
+}
+
+.blogcrumb a {
+  font-size: 1.25em;
+  margin: 0px 20px 0px 0px;
+}
+
+.breadcrumb-item {
+  font-size: 1.25em;
 }

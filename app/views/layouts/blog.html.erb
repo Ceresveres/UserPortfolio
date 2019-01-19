@@ -7,7 +7,11 @@
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
 
+    <link href="https://fonts.googleapis.com/css?family=Muli|Ovo" rel="stylesheet">
+
     <META name="keywords" content="<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/favicon.ico' %>
 
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -15,16 +19,15 @@
 
   <body>
     <main role="main" class="container">
-      
-      <%= render 'shared/blog_header' %>
 
       <%= render 'shared/blog_nav' %>
-
+      
+      <%= render 'shared/blog_header' %>
+        
       <div class="row">
-
-          <%= yield %>
-
-        <%= render 'shared/blog_sidebar' %>           
+        <%= yield %> 
+      
+        <%= render 'shared/blog_sidebar' %>
       </div>
 
         <%= render 'shared/blog_footer' %>
