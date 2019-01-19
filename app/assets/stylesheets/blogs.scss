@@ -63,6 +63,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: .875rem;
+  color: #343a40;
+}
+
+.nav .nav-link:hover {
+  color: #007bff;
 }
 
 .card {
